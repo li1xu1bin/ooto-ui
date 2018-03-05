@@ -1,4 +1,5 @@
-# [OOTO UI](https://li1xu1bin.github.io/ooto-ui/): OOTO UI KIT
+# [OOTO UI Kit](https://li1xu1bin.github.io/ooto-ui/)
 
-# License
-MIT222
+**构建工具**: [Parcel](https://parceljs.org/)
+**框架**: [Vue](https://cn.vuejs.org/)
+
