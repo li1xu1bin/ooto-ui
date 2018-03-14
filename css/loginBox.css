@@ -1,0 +1,86 @@
+/* *
+ * 配色
+ * */
+.login {
+  width: 300px;
+  margin: 100px auto;
+}
+.login h2 {
+  text-align: center;
+  color: #4da1ff;
+}
+.login .login_logo img {
+  display: block;
+  margin: 0 auto;
+}
+.login .login_form {
+  position: relative;
+  width: 258px;
+  margin: 25px auto;
+}
+.login .login_form .login_back {
+  margin: 25px auto;
+}
+.login .login_form .login_back a {
+  font-weight: 300;
+}
+.login .login_form .login_back a:hover {
+  color: #4da1ff;
+}
+.login .login_info {
+  width: 65%;
+  margin: 0 auto;
+}
+.login .login_info a:hover {
+  color: #4da1ff;
+}
+.login .login_btn {
+  width: 100%;
+  margin: 25px auto 0;
+}
+.login .login_code {
+  cursor: pointer;
+}
+.login .login_code img {
+  width: 100px;
+  height: 50px;
+  border: 1px solid #000000;
+}
+.flex .input_shadow {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.flex .btn-normal {
+  margin-left: 10px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.flex .btn-desktop {
+  margin-left: 10px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.flex .btn-mobile {
+  margin: 0 10px;
+  display: none;
+}
+@media screen and (max-width: 480px) {
+  .login {
+    width: 100%;
+  }
+  .login .login_form {
+    width: 80%;
+  }
+  .flex .input_shadow {
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+  }
+  .flex .btn-desktop {
+    display: none;
+  }
+  .flex .btn-mobile {
+    display: block;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+}
