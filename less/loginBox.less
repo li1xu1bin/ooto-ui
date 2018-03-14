@@ -1,0 +1,91 @@
+@import "mixins/colors.less";
+
+.login {
+    width: 300px;
+    margin: 100px auto;
+    h2 {
+        text-align: center;
+        color: @primary;
+    }
+    .login_logo img {
+        display: block;
+        margin: 0 auto;
+    }
+    .login_form {
+        position: relative;
+        width: 258px;
+        margin: 25px auto;
+        .login_back {
+            margin: 25px auto;
+            a {
+                font-weight: 300;
+                &:hover {
+                    color: @primary;
+                }
+            }
+        }
+    }
+    .login_info {
+        width: 65%;
+        margin: 0 auto;
+        a {
+            &:hover {
+                color: @primary;
+            }
+        }
+    }
+    .login_btn {
+        width: 100%;
+        margin: 25px auto 0;
+    }
+    .login_code {
+        cursor: pointer;
+        img {
+            width: 100px;
+            height: 50px;
+            border: 1px solid @black;
+        }
+    }
+}
+
+.flex {
+    .input_shadow {
+        flex-shrink: 0;
+    }
+    .btn-normal {
+//        width: 130px;
+        margin-left: 10px;
+        flex-shrink: 0;
+    }
+    .btn-desktop {
+//        width: 130px;
+        margin-left: 10px;
+        flex-shrink: 0;
+    }
+    .btn-mobile {
+//        width: 130px;
+        margin: 0 10px;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .login {
+        width: 100%;
+        .login_form {
+            width: 80%;
+        }
+    }
+    .flex {
+        .input_shadow {
+            flex-shrink: 1;
+        }
+        .btn-desktop {
+            display: none;
+        }
+        .btn-mobile {
+            display: block;
+            flex-shrink: 0;
+        }
+    }
+}

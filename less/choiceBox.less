@@ -1,0 +1,110 @@
+@import "mixins/colors.less";
+.choice {
+    width: 80%;
+    margin: 60px auto;
+    h2 {
+        text-align: center;
+        color: @primary;
+    }
+    .choice_flex {
+        display: flex;
+        width: 72%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+    .card_box {
+        width: 33.3%;
+    }
+}
+
+.card_role {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    font-size: 18px;
+    margin: 10px auto;
+    padding: 8px 5px;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    &:hover{
+        box-shadow: 0 2px 9px rgba(0,0,0,0.3);
+    }
+    div {
+        width: 116px;
+        height: 116px;
+        margin: 15px auto;
+        background-image: url("/login/img/role.png");
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        background-position: center;
+    }
+    &.card_principal {
+        div {
+            background-image: url("/login/img/principal.png");
+        }
+    }
+    &.card_teacher {
+        div {
+            background-image: url("/login/img/teacher.png");
+        }
+    }
+    &.card_warehouse {
+        div {
+            background-image: url("/login/img/warehouse.png");
+        }
+    }
+    &.card_parent {
+        div {
+            background-image: url("/login/img/parent.png");
+        }
+    }
+    &.card_admin {
+        div {
+            background-image: url("/login/img/admin.png");
+        }
+    }
+}
+
+.modal_flex {
+    display: flex;
+}
+
+.card_site {
+    width: 150px;
+    height: 150px;
+    img {
+        width: 50%;
+        height: 50%;
+        margin: 10px auto;
+    }
+    p {
+        color: @black;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .choice {
+        .choice_flex {
+            width: 100%;
+        }
+        .card_box {
+            width: 50%;
+        }
+    }
+}
+
+@media all and (max-width: 480px) {
+    .choice {
+        .choice_flex {
+            width: 100%;
+        }
+        .card_box {
+            width: 100%;
+        }
+    }
+    .modal_flex {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,54 @@
+   .nx_table {
+       width: 750px;
+       color: #1F2D3D;
+       text-align: left;
+       border-collapse: collapse;
+       border: 1px solid #dfe6ec;
+       box-shadow: 0 4px 9px rgba(145, 117, 117, 0.02);
+       thead {
+           tr {
+               background-color: #E0EEFD;
+           }
+       }
+       tbody {
+           tr {
+               background-color: #fff;
+               &:hover {
+                   cursor: pointer;
+                   background-color: #E0EEFD;
+               }
+           }
+
+       }
+       th,
+       td {
+           height: 40px;
+           padding-left: 18px;
+           padding-right: 18px;
+           border-right: 1px solid #dfe6ec;
+           border-bottom: 1px solid #dfe6ec;
+       } //扩展
+       .td_expand {
+           padding: 20px 50px;
+           background-color: #F4F8F9;
+           &:hover {
+               cursor: default;
+               background-color: #F4F8F9;
+           }
+           .expand_item {
+               display: inline-block;
+               width: 35%;
+           }
+           label {
+               color: #888888;
+               display: inline-block;
+               width: 90px;
+               padding: 8px 12px 8px 0;
+
+           }
+           span {
+               color: #1F2D3D;
+           }
+
+       }
+   }

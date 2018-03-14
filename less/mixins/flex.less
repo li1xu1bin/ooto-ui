@@ -1,0 +1,60 @@
+
+.flex{
+    display: flex;
+//    width: 100%;
+//    margin: 0 auto;
+//    overflow: hidden;
+}
+.flex-block{
+    flex-direction: column;
+}
+
+
+
+
+
+.flex_item{
+    flex-shrink: 0;
+    margin-right: 5px;
+}
+.flex_item + .flex_item{
+    
+}
+/*
+**对齐
+*/
+.flex-top{
+    align-items: flex-start;
+} 
+.flex-middle{
+    align-items: center;
+}
+.flex-bottom{
+    align-items: flex-end;
+} 
+
+.flex-center{
+    justify-content: center;
+}
+.flex-between{
+    justify-content: space-between;
+}
+.flex-around{
+    justify-content: space-around;
+}
+/*
+**定义计算表达式
+**栅格系统
+*/
+.flexSize-loop(@n,@i: 0) when (@i <=@n) {
+    .flex-@{i} {
+        flex:none;
+        width: calc(100% * @i / 12);
+    }
+    .flexSize-loop(@n,(@i + 1));
+}
+.flexSize-loop(12);
+
+
+
+
