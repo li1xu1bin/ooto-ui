@@ -38,7 +38,7 @@
                     <p>密码是否可见</p>
                 </div>
             </div>
-            <button class="btn btn-primary btn-large login_btn login_block" type="submit" ng-click="login222()">登录</button>
+            <button class="btn btn-primary btn-large login_btn login_block" type="submit" ng-click="login()">登录</button>
 
 
             <!--
@@ -201,8 +201,7 @@
                     },
                     password: {
                         required: true,
-                        minlength: 5,
-                        checkPasswd: true
+                        minlength: 5
                     }
                 },
                 messages: {
